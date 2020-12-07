@@ -7,14 +7,37 @@ public class Post {
     private int note;
     private int firstname;
     private int lastname;
-    private int message;
+    private String message;
     private int friend;
-    private String likesCount;
+    private int likesCount;
     private String messagesInfo;
-    private String storiesInfo;
-    private String player;
+    private boolean storiesInfo;
 
+    private int player;
 
+    public int getPlayer() {
+        return player;
+    }
+
+    public void setPlayer(int player) {
+        this.player = player;
+    }
+
+    public boolean isStoriesInfo() {
+        return storiesInfo;
+    }
+
+    public void setStoriesInfo(boolean storiesInfo) {
+        this.storiesInfo = storiesInfo;
+    }
+
+    public int getLikesCount() {
+        return likesCount;
+    }
+
+    public void setLikesCount(int likesCount) {
+        this.likesCount = likesCount;
+    }
 
     public String getMessagesInfo() {
         return messagesInfo;
@@ -22,30 +45,6 @@ public class Post {
 
     public void setMessagesInfo(String messagesInfo) {
         this.messagesInfo = messagesInfo;
-    }
-
-    public String getStoriesInfo() {
-        return storiesInfo;
-    }
-
-    public void setStoriesInfo(String storiesInfo) {
-        this.storiesInfo = storiesInfo;
-    }
-
-    public String getPlayer() {
-        return player;
-    }
-
-    public void setPlayer(String player) {
-        this.player = player;
-    }
-
-    public String getLikesCount() {
-        return likesCount;
-    }
-
-    public void setLikesCount(String likesCount) {
-        this.likesCount = likesCount;
     }
 
     public int getImage() {
@@ -103,12 +102,11 @@ public class Post {
     public void setFriend(int friend) {
         this.friend = friend;
     }
-
-    public int getMessage() {
+    public String getMessage() {
         return message;
     }
 
-    public void setMessage(int message) {
+    public void setMessage(String message) {
         this.message = message;
     }
 
