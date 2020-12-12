@@ -9,7 +9,6 @@ public class Post {
     private String lastname;
     private String message;
     private int friend;
-    private int likesCount;
     private boolean storiesInfo;
     private int player;
 
@@ -28,7 +27,6 @@ public class Post {
     public void setFirstname(String firstname) {
         this.firstname = firstname;
     }
-
 
     public String getNote() {
         return note;
@@ -52,14 +50,6 @@ public class Post {
 
     public void setStoriesInfo(boolean storiesInfo) {
         this.storiesInfo = storiesInfo;
-    }
-
-    public int getLikesCount() {
-        return likesCount;
-    }
-
-    public void setLikesCount(int likesCount) {
-        this.likesCount = likesCount;
     }
 
     public int getImage() {
