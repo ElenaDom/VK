@@ -4,16 +4,39 @@ public class Post {
     private int id;
     private int date;
     private int image;
-    private int note;
-    private int firstname;
-    private int lastname;
+    private String note;
+    private String firstname;
+    private String lastname;
     private String message;
     private int friend;
     private int likesCount;
-    private String messagesInfo;
     private boolean storiesInfo;
-
     private int player;
+
+    public String getLastname() {
+        return lastname;
+    }
+
+    public void setLastname(String lastname) {
+        this.lastname = lastname;
+    }
+
+    public String getFirstname() {
+        return firstname;
+    }
+
+    public void setFirstname(String firstname) {
+        this.firstname = firstname;
+    }
+
+
+    public String getNote() {
+        return note;
+    }
+
+    public void setNote(String note) {
+        this.note = note;
+    }
 
     public int getPlayer() {
         return player;
@@ -39,14 +62,6 @@ public class Post {
         this.likesCount = likesCount;
     }
 
-    public String getMessagesInfo() {
-        return messagesInfo;
-    }
-
-    public void setMessagesInfo(String messagesInfo) {
-        this.messagesInfo = messagesInfo;
-    }
-
     public int getImage() {
         return image;
     }
@@ -69,30 +84,6 @@ public class Post {
 
     public void setId(int id) {
         this.id = id;
-    }
-
-    public int getNote() {
-        return note;
-    }
-
-    public void setNote(int note) {
-        this.note = note;
-    }
-
-    public int getFirstname() {
-        return firstname;
-    }
-
-    public void setFirstname(int firstname) {
-        this.firstname = firstname;
-    }
-
-    public int getLastname() {
-        return lastname;
-    }
-
-    public void setLastname(int lastname) {
-        this.lastname = lastname;
     }
 
     public int getFriend() {
