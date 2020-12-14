@@ -2,38 +2,64 @@ package ru.netology.domain;
 
 public class Post {
     private int id;
+    private String user;
     private int date;
     private int image;
-    private String note;
-    private String firstname;
-    private String lastname;
-    private String message;
+    private String notesInfo;
+    private String messagesInfo;
     private int friend;
     private boolean storiesInfo;
     private int player;
+    private int groupsInfo;
+    private int photosInfo;
+    private int likesInfo;
 
-    public String getLastname() {
-        return lastname;
+    public int getLikesInfo() {
+        return likesInfo;
     }
 
-    public void setLastname(String lastname) {
-        this.lastname = lastname;
+    public void setLikesInfo(int likesInfo) {
+        this.likesInfo = likesInfo;
     }
 
-    public String getFirstname() {
-        return firstname;
+    public String getNotesInfo() {
+        return notesInfo;
     }
 
-    public void setFirstname(String firstname) {
-        this.firstname = firstname;
+    public void setNotesInfo(String notesInfo) {
+        this.notesInfo = notesInfo;
     }
 
-    public String getNote() {
-        return note;
+    public int getPhotosInfo() {
+        return photosInfo;
     }
 
-    public void setNote(String note) {
-        this.note = note;
+    public void setPhotosInfo(int photosInfo) {
+        this.photosInfo = photosInfo;
+    }
+
+    public int getGroupsInfo() {
+        return groupsInfo;
+    }
+
+    public void setGroupsInfo(int groupsInfo) {
+        this.groupsInfo = groupsInfo;
+    }
+
+    public String getUser() {
+        return user;
+    }
+
+    public void setUser(String user) {
+        this.user = user;
+    }
+
+    public String getMessagesInfo() {
+        return messagesInfo;
+    }
+
+    public void setMessagesInfo(String messagesInfo) {
+        this.messagesInfo = messagesInfo;
     }
 
     public int getPlayer() {
@@ -83,12 +109,6 @@ public class Post {
     public void setFriend(int friend) {
         this.friend = friend;
     }
-    public String getMessage() {
-        return message;
-    }
 
-    public void setMessage(String message) {
-        this.message = message;
-    }
 
 }
