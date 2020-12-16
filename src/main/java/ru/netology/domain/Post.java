@@ -6,20 +6,53 @@ public class Post {
     private int date;
     private int image;
     private String notesInfo;
-    private String messagesInfo;
+    private MessagesInfo messagesInfo;
     private int friend;
-    private boolean storiesInfo;
+    private StoriesInfo storiesInfo;
     private int player;
-    private int groupsInfo;
-    private int photosInfo;
-    private int likesInfo;
+    private GroupsInfo groupsInfo;
+    private PhotosInfo photosInfo;
+    private LikesInfo likesInfo;
 
-    public int getLikesInfo() {
+
+    public StoriesInfo getStoriesInfo() {
+        return storiesInfo;
+    }
+
+    public void setStoriesInfo(StoriesInfo storiesInfo) {
+        this.storiesInfo = storiesInfo;
+    }
+
+    public GroupsInfo getGroupsInfo() {
+        return groupsInfo;
+    }
+
+    public void setGroupsInfo(GroupsInfo groupsInfo) {
+        this.groupsInfo = groupsInfo;
+    }
+
+    public PhotosInfo getPhotosInfo() {
+        return photosInfo;
+    }
+
+    public void setPhotosInfo(PhotosInfo photosInfo) {
+        this.photosInfo = photosInfo;
+    }
+
+    public LikesInfo getLikesInfo() {
         return likesInfo;
     }
 
-    public void setLikesInfo(int likesInfo) {
+    public void setLikesInfo(LikesInfo likesInfo) {
         this.likesInfo = likesInfo;
+    }
+
+    public MessagesInfo getMessagesInfo() {
+        return messagesInfo;
+    }
+
+    public void setMessagesInfo(MessagesInfo messagesInfo) {
+        this.messagesInfo = messagesInfo;
     }
 
     public String getNotesInfo() {
@@ -30,22 +63,6 @@ public class Post {
         this.notesInfo = notesInfo;
     }
 
-    public int getPhotosInfo() {
-        return photosInfo;
-    }
-
-    public void setPhotosInfo(int photosInfo) {
-        this.photosInfo = photosInfo;
-    }
-
-    public int getGroupsInfo() {
-        return groupsInfo;
-    }
-
-    public void setGroupsInfo(int groupsInfo) {
-        this.groupsInfo = groupsInfo;
-    }
-
     public String getUser() {
         return user;
     }
@@ -54,28 +71,12 @@ public class Post {
         this.user = user;
     }
 
-    public String getMessagesInfo() {
-        return messagesInfo;
-    }
-
-    public void setMessagesInfo(String messagesInfo) {
-        this.messagesInfo = messagesInfo;
-    }
-
     public int getPlayer() {
         return player;
     }
 
     public void setPlayer(int player) {
         this.player = player;
-    }
-
-    public boolean isStoriesInfo() {
-        return storiesInfo;
-    }
-
-    public void setStoriesInfo(boolean storiesInfo) {
-        this.storiesInfo = storiesInfo;
     }
 
     public int getImage() {
